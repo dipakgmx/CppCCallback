@@ -12,6 +12,7 @@ int c_wrapper_getValue(void *arg1)
     return foo_instance->getValue();
 }
 
+//! Foo class constructor
 Foo::Foo() :
     value_{0}
 {}
@@ -26,10 +27,15 @@ void Foo::decrement(const int &val)
     value_ -= val;
 }
 
+//! Getter function
+//! \return Value of class variable value_
 int Foo::getValue() const
 {
     return value_;
 }
+
+//! Setter function
+//! \param value Value to be set
 void Foo::setValue(int value)
 {
     value_ = value;
