@@ -1,4 +1,5 @@
 #include "Test.h"
+#include <stdio.h>
 
 static get_handler_t get_handler_ = NULL;   /**< Getter function pointer of type int (*g)(void *). */
 static set_handler_t set_handler_ = NULL;   /**< Setter function pointer of type void (*s)(int,  void *). */
